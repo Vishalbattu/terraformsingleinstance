@@ -101,7 +101,7 @@ data "aws_ami" "my_ami" {
 
 
  resource "aws_instance" "web-1" {
-     ami = var.imagename
+     #ami = var.imagename
      ami = "ami-087c17d1fe0178315"
      #ami = "${data.aws_ami.my_ami.id}"
      availability_zone = "us-east-1a"
